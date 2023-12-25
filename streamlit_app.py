@@ -3,6 +3,19 @@ from llama_index import VectorStoreIndex, ServiceContext, Document
 from llama_index.llms import OpenAI
 import openai
 
+import os 
+from llama_index import StorageContext
+OPENAI_API_KEY= os.environ.get('OPENAI_API_KEY') #keep your OPENAI_API_KEY in the .env file and retrieve it
+
+from llama_index import VectorStoreIndex, SimpleDirectoryReader
+from llama_index import (
+    VectorStoreIndex,
+    SimpleDirectoryReader,
+    StorageContext,
+    load_index_from_storage,
+)
+
+
 openai.api_key = OPENAI_API_KEY
 st.header("Chat with the Streamlit docs 💬 📚")
 
