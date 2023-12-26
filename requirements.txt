@@ -3,3 +3,4 @@ openai
 llama-index
 nltk
 llama_index.llms
+llama_index
