@@ -2,5 +2,3 @@ streamlit
 llama-index
 openai
 nltk
-llama_index.llms
-llama_index
